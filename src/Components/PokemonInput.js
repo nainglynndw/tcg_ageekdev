@@ -14,6 +14,7 @@ const PokemonInput = ({
     <View style={styles.inputContainer}>
       {label && <Text style={[{color: '#000'}, labelStyle]}>{label}</Text>}
       <TextInput
+        autoCapitalize="none"
         onKeyPress={onKeyPress}
         style={[styles.input, inputStyle]}
         placeholder={placeholder}
